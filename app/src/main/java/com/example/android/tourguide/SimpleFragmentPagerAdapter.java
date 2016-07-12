@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
 
-    Context mContext = null;
+    Context mContext;
 
     public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
@@ -18,7 +18,6 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     }
 
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[]{"Attractions", "Arts & Culture" , "Shopping", "Events"};
 
     @Override
     public Fragment getItem(int position) {
@@ -43,6 +42,6 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return tabTitles[position];
+        return " " + position;
     }
 }

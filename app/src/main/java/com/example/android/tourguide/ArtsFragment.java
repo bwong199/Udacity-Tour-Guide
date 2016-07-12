@@ -34,11 +34,8 @@ public class ArtsFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_arts, container, false);
 
-        // Construct the data source
         ArrayList<Location> arrayOfLocations = new ArrayList<Location>();
-// Create the adapter to convert the array to views
         LocationAdapter adapter = new LocationAdapter(getActivity(), arrayOfLocations);
-// Attach the adapter to a ListView
         ListView listView = (ListView) v.findViewById(R.id.artsListView);
 
         listView.setAdapter(adapter);

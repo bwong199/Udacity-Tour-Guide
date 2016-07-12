@@ -24,9 +24,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Fragment that displays "Wednesday".
- */
+
 public class ShoppingFragment extends Fragment {
 
     @Override

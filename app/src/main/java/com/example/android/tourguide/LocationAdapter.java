@@ -19,7 +19,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Get the data item for this position
         Location location = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {

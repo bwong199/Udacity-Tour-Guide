@@ -19,11 +19,8 @@ public class EventFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_event, container, false);
 
-        // Construct the data source
         ArrayList<LocationImage> arrayOfLocationImages = new ArrayList<LocationImage>();
-// Create the adapter to convert the array to views
         LocationImageAdapter adapter = new LocationImageAdapter(getActivity(), arrayOfLocationImages);
-// Attach the adapter to a ListView
         ListView listView = (ListView) v.findViewById(R.id.eventlvItems);
 
         listView.setAdapter(adapter);

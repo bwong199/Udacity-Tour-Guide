@@ -24,9 +24,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Fragment that displays "Monday".
- */
+
 public class AttractionsFragment extends Fragment {
 
     @Override
@@ -34,11 +32,8 @@ public class AttractionsFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_attraction, container, false);
 
-        // Construct the data source
         ArrayList<Location> arrayOfLocations = new ArrayList<Location>();
-// Create the adapter to convert the array to views
         LocationAdapter adapter = new LocationAdapter(getActivity(), arrayOfLocations);
-// Attach the adapter to a ListView
         ListView listView = (ListView) v.findViewById(R.id.lvItems);
 
         listView.setAdapter(adapter);

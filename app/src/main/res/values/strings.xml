@@ -44,4 +44,9 @@
     <string name="southCentreMallAddress">100 Anderson Rd SE</string>
     <string name="chinookName">Chinook Centre</string>
     <string name="chinookAddress">6455 Macleod Trail SW</string>
+    <string name="attractionsTV">Attractions</string>
+    <string name="attractionsTab">Attractions</string>
+    <string name="shoppingsTab">Shopping</string>
+    <string name="nameTV">Name</string>
+    <string name="locationText">Location</string>
 </resources>

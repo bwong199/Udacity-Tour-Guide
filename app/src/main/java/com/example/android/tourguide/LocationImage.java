@@ -15,22 +15,7 @@ public class LocationImage {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
+    
 
     public LocationImage(String name, String location, int image) {
         this.name = name;
